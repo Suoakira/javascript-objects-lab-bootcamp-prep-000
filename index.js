@@ -5,4 +5,7 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return object
 }
 
-function 
+function updateObjectWithKeyAndValue(object, key, value) {
+  let clone = object.assign({}, object, key, value)
+  return clone
+}
